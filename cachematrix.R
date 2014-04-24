@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This R program contains two functions that compute and store the inverse matrix
+## of an orginal input matrix.
 
-## Write a short comment describing this function
+## The first function (makeCacheMatrix) accepts a matrix as an input and returns 
+## an object with additional functionality to be called from outside of the
+## function's environment.
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -18,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function (cacheSolve) takes the output
+## from the first function and either computes the inverse matrix of the original
+## or it looks up the already-computed inverse matrix from memory; either of which
+## it returns.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
